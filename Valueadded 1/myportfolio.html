@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiran Rathod | Student Portfolio</title>
+
+  <style>
+    body {
+      background-color: LavenderBlush;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+
+    h1 {
+      color: Crimson;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      color: DarkSlateBlue;
+      border-bottom: 2px solid LightSteelBlue;
+      padding-bottom: 5px;
+    }
+
+    nav {
+      background-color: MidnightBlue;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: Gold;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .box {
+      background-color: MistyRose;
+      padding: 15px;
+      width: 250px;
+      margin: 15px;
+      border: 2px solid DarkSlateBlue;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .box img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    table {
+      width: 100%;
+      max-width: 750px;
+      border-collapse: collapse;
+      background-color: white;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">Profile</a>
+    <a href="#skills">Technical Skills</a>
+    <a href="#gallery">Projects</a>
+    <a href="#contact">Reach Out</a>
+  </nav>
+
+  <section id="home" style="text-align: center; padding: 25px;">
+    <img src="https://sitnagpur.edu.in/assets/img/new-logo.png" alt="Symbiosis Institute of Technology, Nagpur" style="max-width: 550px; width: 90%; height: auto; margin-bottom: 10px;">
+    <h1>Kiran Rathod's Digital Portfolio</h1>
+    <p><b>Hello and welcome to my personal web space!</b></p>
+    <p>Undergraduate CSE Scholar at Symbiosis Institute of Technology, Nagpur exploring modern web design and software development.</p>
+  </section>
+
+  <section id="about" style="padding: 20px 40px;">
+    <h2>Student Profile</h2>
+    <p>Hi! I am <b>Kiran Rathod</b>, a first-year engineering student passionate about building clean, responsive webpages from scratch.</p>
+    <p><b>Institution:</b> Symbiosis Institute of Technology (SIT), Nagpur</p>
+    <p><b>Program:</b> B.Tech in Computer Science &amp; Engineering</p>
+    <p><b>Interests:</b> UI Design, Problem Solving, Photography, and Exploring New Tech.</p>
+  </section>
+
+  <section id="skills" style="padding: 20px 40px;">
+    <h2>Technical Skills</h2>
+    <table border="1">
+      <tr style="background-color: LightSteelBlue;">
+        <th>Domain</th>
+        <th>Core Concepts Covered</th>
+      </tr>
+      <tr>
+        <td>HTML5</td>
+        <td>Semantic Tags, Hyperlinks, Ordered/Unordered Lists, Tables, Input Forms, and Media Embedding</td>
+      </tr>
+      <tr>
+        <td>CSS3</td>
+        <td>Selectors, Box Model, Inline/Internal/External Stylesheets, Flexbox Alignment, and Responsive Layouts</td>
+      </tr>
+      <tr>
+        <td>Core Coding</td>
+        <td>Structured Programming Fundamentals in C, Variables, Loops, and Conditional Logic</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="gallery" style="padding: 20px 40px;">
+    <h2>Academic Mini-Projects</h2>
+    <div class="gallery">
+
+      <div class="box">
+        <img src="https://sitnagpur.edu.in" alt="SIT Nagpur Campus Building">
+        <h3>Campus Info Page</h3>
+        <p>Multi-section college webpage built with navigation anchors and external links.</p>
+      </div>
+
+      <div class="box" style="background-color: HoneyDew;">
+        <img src="https://wikimedia.org" alt="CSS Flexbox Wireframe Layout">
+        <h3>Flexbox Card Grid</h3>
+        <p>Responsive container layout demonstrating flex-wrap, margins, and custom color blocks.</p>
+      </div>
+
+      <div class="box" style="background-color: LightYellow;">
+        <img src="https://w3schools.com" alt="Web Form Interface Preview" style="display: none;">
+        <div style="background-color: white; border: 1px solid #bbb; border-radius: 5px; height: 140px; padding: 10px; box-sizing: border-box; text-align: left; font-size: 11px;">
+          <b style="color: MidnightBlue;">Student Registration</b>
+          <div style="background: #f0f0f0; border: 1px solid #ccc; padding: 3px; margin: 5px 0;">Name: Kiran Rathod</div>
+          <div style="background: #f0f0f0; border: 1px solid #ccc; padding: 3px; margin: 5px 0;">Branch: B.Tech CSE</div>
+          <span style="display: inline-block; background: Crimson; color: white; padding: 2px 8px; border-radius: 3px; margin-top: 4px;">Register</span>
+        </div>
+        <h3>Student Registration Form</h3>
+        <p>Interactive HTML form with text fields, dropdown menus, and validation inputs.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" style="padding: 20px 40px;">
+    <h2>Reach Out to Me</h2>
+    <form>
+      Full Name:<br>
+      <input type="text" name="fullname" placeholder="Enter your name"><br><br>
+
+      Email Address:<br>
+      <input type="email" name="useremail" placeholder="Enter your email"><br><br>
+
+      Visitor Category:<br>
+      <select name="category">
+        <option>-- Choose Category --</option>
+        <option>Batchmate / Peer</option>
+        <option>Faculty Member</option>
+        <option>Internship / Hiring Team</option>
+        <option>Guest Visitor</option>
+      </select><br><br>
+
+      Your Note:<br>
+      <textarea rows="4" cols="35" placeholder="Write your message here..."></textarea><br><br>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+
+  <footer style="text-align: center; padding: 20px; background-color: MidnightBlue; color: white;">
+    <p>&copy; 2026 Kiran Rathod | Department of CSE, SIT Nagpur</p>
+    <p><a href="#home" style="color: Gold;">Return to Top</a></p>
+  </footer>
+
+</body>
+</html>
