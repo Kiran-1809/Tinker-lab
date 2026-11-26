@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        @media screen and (min-width: 600px) {}
+        
+        .Box {
+            background-color: lightpink;
+            padding: 20px;
+            width: 200px;
+            margin: 30px;
+        }
+        
+        .cont {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        
+        h2 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>SIT Nagpur</h2>
+    <img src="https://sitnagpur.edu.in/images/infra2.webp" height="200" width="600" alt="SIT Nagpur Infrastructure">
+    
+    <div class="cont">
+        <div class="Box">
+            Welcome To SIT
+        </div>
+        
+        <div class="Box" style="background-color: teal;">
+            This is Affiliated To SIU
+        </div>
+        
+        <div class="Box" style="background-color: khaki;">
+            INLINE
+        </div>
+        
+        <div class="Box" style="background-color: coral; color: white;">
+            EXTERNAL
+        </div>
+        
+        <div class="Box" style="background-color: aqua;">
+            INTERNAL
+        </div>
+    </div>
+</body>
+</html>
